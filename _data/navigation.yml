@@ -5,7 +5,7 @@ main:
     url: /cv/
 
   - title: "Study Notes"
-      url: /study_notes/
+    url: /study_notes/
 
   #- title: "PublNications"
    # url: /publications/
