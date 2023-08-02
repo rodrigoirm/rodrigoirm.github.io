@@ -3,8 +3,8 @@ layout: archive
 title: "Study Notes"
 permalink: /study_notes/
 author_profile: true
-redirect_from:
-  - /resume
+#redirect_from:
+  #- /resume
 ---
 
 {% include base_path %}
