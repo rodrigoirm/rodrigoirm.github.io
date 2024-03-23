@@ -9,7 +9,7 @@ author_profile: true
 
 {% include base_path %}
 
-Once in a while, I (try to) type up notes on topics that either: (1) I need to understand; (2) somehow I find myself interested on but aren't essential to my research or; (3) show(ed) up in courses that I am attending to (or attended to). I will try to post some of them in this page. Please, bear in mind that some of them might be a work still in progress or be incomplete. If you think I have made a mistake somewhere, feel free to discuss it with me.
+Once in a while, I try to type up notes on subjects that I've been studying during my master's and post them in this page. Bear in mind that most of them are works still in progress. If you spot any mistakes, feel free to contact me.
 
 [Tensor Product of Vector Spaces](https://rodrigoirm.github.io/files/notes/tensor_products.pdf)
 ======
@@ -18,3 +18,8 @@ Despite their ubiquitousness, during my undergraduate years, tensors were usuall
 [Generalized Probabilistic Theories (Slides)](https://rodrigoirm.github.io/files/presentations/An_Introduction_to_GPTs.pdf)
 ======
 I presented a seminar on the basics of GPTs to my research group, here are the slides.
+
+[Notes on Category Theory (incomplete)](https://rodrigoirm.github.io/files/notes/cat_theory.pdf)
+======
+Category theory is a fascinating subject in and of itself. Remarkably, quantum theory can be formulated in a category-theoretical language and, since it is a particular type of generalized probabilistic theory (GPT), this gives me the impression that GPTs can be formulated within such framework, too. With that in mind, I am studying a bit of category theory in the hopes that I will get a
+better picture of the Choi-Jamiołkowski isomorphism and how to extend it to GPTs without resorting to purification.
