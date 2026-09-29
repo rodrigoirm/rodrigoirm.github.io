@@ -1,32 +1,63 @@
-@font-face{
+@font-face {
     font-family: 'Nunito';
     src: url("../fonts/Nunito-VariableFont_wght.ttf") format("truetype");
     font-weight: 200 900;
     font-style: normal;
 }
 
-@font-face{
+@font-face {
     font-family: 'Inter';
     src: url("../fonts/InterVariable.ttf") format("truetype");
     font-weight: 100 900;
     font-style: normal;
 }
 
-@font-face{
+@font-face {
     font-family: 'Inter';
     src: url("../fonts/InterVariable-Italic.ttf") format("truetype");
     font-weight: 100 900;
     font-style: italic;
 }
 
-body{
+.about-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    margin-top: 0;
+}
+
+/* General page */
+
+body {
     font-family: 'Nunito', sans-serif;
-    max-width: 800px;
-    margin: 80px auto;
-    padding: 0 20px;
+    margin: 0;
     line-height: 1.6;
     color: #0c0c0c;
 }
+
+.page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+
+/* Headings */
 
 h1, h2, h3 {
     font-family: 'Inter', sans-serif;
@@ -39,7 +70,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
@@ -50,29 +81,54 @@ h3 {
     font-weight: 400;
 }
 
-header {
-    margin-bottom: 2rem;
-}
 
-header h1 {
-    font-style: italic;
-    color: #2f4f7f;
-}
+/* Navigation bar */
 
-nav {
+.nav-bar {
     font-family: 'Inter', sans-serif;
-    font-weight: 200;
-    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 40px;
+    background-color: #32569a;
+    color: white;
 }
 
-nav a {
-    margin-right: 20px;
-    color: #0066cc;
+.site-name {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1;
+    color: white;
+}
+.site-name a{
     text-decoration: none;
+    color: white;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.nav-links ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1;
+}
+
+.nav-links a:hover {
+    color: #d9e5f7;
 }
 
 ul {
@@ -119,4 +175,94 @@ ul.book-list li a {
 
 ul.book-list li a:hover {
     text-decoration: underline;
+}
+
+/* Accordions  */
+
+.accordion {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.accordion-item {
+    border: 1px solid #cccccc;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+/* Accordion heading */
+.accordion-item summary {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    padding: 0.6rem 1.5rem;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    list-style: none;
+}
+
+/* Remove browser's default triangle */
+.accordion-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-item summary::marker {
+    content: "";
+}
+
+/* Custom + symbol */
+.accordion-item summary::after {
+    content: "+";
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1;
+
+    margin-left: auto;
+}
+
+/* Change + to − when open */
+.accordion-item[open] summary::after {
+    content: "−";
+}
+
+/* Optional hover effect */
+.accordion-item summary:hover {
+    background-color: #f5f5f5;
+}
+
+/* Separator when opened */
+.accordion-item[open] summary {
+    border-bottom: 1px solid #cccccc;
+}
+
+/* Content inside accordion */
+.accordion-content {
+    padding: 1rem 1.5rem 1.5rem;
+}
+
+.accordion-content p:first-child {
+    margin-top: 0;
+}
+
+.accordion-content p:last-child {
+    margin-bottom: 0;
+}
+
+.notebook-link {
+    text-decoration: none;
+}
+
+.notebook-link:hover {
+    text-decoration: underline;
+}
+
+.book-author {
+    margin-left: 0.25rem;
 }

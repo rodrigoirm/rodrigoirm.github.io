@@ -11,34 +11,76 @@
 
 <body>
 
-    <header>
-        <h1>Rodrigo Ramos</h1>
-        <p>Quantum Foundations &amp; Quantum Information</p>
+    <header class="nav-bar">
+        <h1 class="site-name"><a href="index.html">Rodrigo Ramos</a></h1>
+
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="notes.html">Theses and Notebooks</a></li>
+                <li><a href="misc.html"><b>Miscellaneous</b></a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="misc.html">Miscellaneous</a>
-    </nav>
-
-    <main>
+    <main class="page-content">
 
         <section id="resources">
-            <h2>Resources</h2>
+            <h2 style="text-align: center;">Resources</h2>
             <p>
                 Textbooks, lecture notes, recorded lectures, etc.
             </p>
-            <ul class="diamond-list">
-                <li>Quantum theory</li>
-                <li>Physics in general</li>
-                <li>Mathematics and Computer Science</li>
-            </ul>
+
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary>
+                        Quantum theory
+                    </summary>
+                    <div class="accordion-content">
+                        <ul class="diamond-list">
+                            <li>Quantum information theory:</li>
+                            <li>Bell nonlocality:</li>
+                            <li>Quantum cryptography:</li>
+                            <li>Semidefinite programming:</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+
+           <div class="accordion">
+                <details class="accordion-item">
+                    <summary>
+                        Physics undergrad
+                    </summary>
+                    <div class="accordion-content">
+                        <ul class="diamond-list">
+                            <li>David Tong's notes:</li>
+                            <li>David Morin's book:</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+
+           <div class="accordion">
+                <details class="accordion-item">
+                    <summary>
+                        Mathematics and Computer Science
+                    </summary>
+                    <div class="accordion-content">
+                        <ul class="diamond-list">
+                            <li>Algebra:</li>
+                            <li>Optimization:</li>
+                            <li>Computability and Complexity Theory:</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
         </section>
 
         <section id="music">
-            <h2>Artists, bands and composers</h2>
+            <h2 style="text-align: center;">Artists, bands and composers</h2>
             <p>
-                Some artists and bands that I highly recommend.
+                Some artists, bands and composers that I highly recommend.
             </p>
             <ul class="music-list">
                 <li><a href="https://www.youtube.com/watch?v=WmLgSrCeC6I" target="_blank">Tigran Hamasyan</a> (Armenian jazz(?) pianist. Honestly, by now, I'd say he has invented his own genre)</li>
@@ -58,7 +100,7 @@
         </section>
 
         <section id="literature">
-            <h2>Essays, novels, short stories, etc.</h2>
+            <h2 style="text-align: center;">Essays, novels, short stories, etc.</h2>
             <p>
                 Some texts which I find interesting for distinct reasons.
             </p>
