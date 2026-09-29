@@ -1,0 +1,122 @@
+@font-face{
+    font-family: 'Nunito';
+    src: url("../fonts/Nunito-VariableFont_wght.ttf") format("truetype");
+    font-weight: 200 900;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Inter';
+    src: url("../fonts/InterVariable.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Inter';
+    src: url("../fonts/InterVariable-Italic.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+    color: #0c0c0c;
+}
+
+h1, h2, h3 {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-style: italic;
+    color: #2f4f7f;
+}
+
+nav {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    margin: 10px 0;
+}
+
+nav a {
+    margin-right: 20px;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 1lh;
+}
+
+ul.diamond-list li::before {
+  content: "\2756";
+  color: #000000;   
+  display: inline-block;
+  width: 1em;      
+  margin-left: -1em;
+}
+
+ul.music-list li::before {
+  content: "\1D11E";
+  color: #000000;   
+  display: inline-block;
+  width: 1em;      
+  margin-left: -1em;
+}
+
+ul.music-list li a {
+    text-decoration: none;
+}
+
+ul.music-list li a:hover {
+    text-decoration: underline;
+}
+
+ul.book-list li::before {
+  content: "\1F4D5";
+  color: #000000;   
+  display: inline-block;
+  width: 1.5em;      
+  margin-left: -1.5em;
+}
+
+ul.book-list li a {
+    text-decoration: none;
+    font-style: italic;
+}
+
+ul.book-list li a:hover {
+    text-decoration: underline;
+}
