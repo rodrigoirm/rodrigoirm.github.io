@@ -136,12 +136,17 @@ ul {
     padding-inline-start: 1lh;
 }
 
-ul.diamond-list li::before {
+ul.diamond-list > li::before {
   content: "\2756";
   color: #000000;   
   display: inline-block;
   width: 1em;      
   margin-left: -1em;
+}
+
+ul.diamond-list ul {
+    list-style: disc;
+    padding-left: 2em;
 }
 
 ul.music-list li::before {
